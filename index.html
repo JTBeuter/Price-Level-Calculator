@@ -11,36 +11,40 @@
             margin: 0 auto;
             padding: 20px;
             line-height: 1.6;
+            background-color: #121212; /* Dark background */
+            color: #ffffff; /* White text */
         }
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
+            background-color: #1e1e1e; /* Darker background for table */
+            color: #ffffff; /* White text for table */
         }
         th, td {
-            border: 1px solid #ddd;
+            border: 1px solid #333333; /* Darker border */
             padding: 8px;
             text-align: center;
         }
         th {
-            background-color: #f2f2f2;
+            background-color: #333333; /* Darker header background */
         }
         .level-header {
-            background-color: #e6e6e6;
+            background-color: #444444; /* Slightly lighter for entry row */
             font-weight: bold;
         }
         .target-zone {
             font-weight: bold;
-            background-color: #f8f8f8;
+            background-color: #2a2a2a; /* Darker background for target zones */
         }
         .lower-target {
-            background-color: #e6ffe6;
+            background-color: #004d00; /* Dark green for lower target */
         }
         .middle-target {
-            background-color: #e6f2ff;
+            background-color: #003366; /* Dark blue for middle target */
         }
         .upper-target {
-            background-color: #ffe6e6;
+            background-color: #660000; /* Dark red for upper target */
         }
         .input-container {
             margin-bottom: 20px;
@@ -48,38 +52,38 @@
         input {
             padding: 8px;
             width: 120px;
+            background-color: #1e1e1e; /* Dark input background */
+            color: #ffffff; /* White text for input */
+            border: 1px solid #333333; /* Darker border */
         }
         button {
             padding: 8px 16px;
-            background-color: #4CAF50;
+            background-color: #4CAF50; /* Green button */
             color: white;
             border: none;
             cursor: pointer;
         }
         button:hover {
-            background-color: #45a049;
+            background-color: #45a049; /* Slightly darker green on hover */
         }
         .explanation {
-            background-color: #f9f9f9;
+            background-color: #1e1e1e; /* Darker background for explanation */
             padding: 15px;
             border-radius: 5px;
             margin-bottom: 20px;
+            color: #ffffff; /* White text */
+        }
+        a {
+            color: #4CAF50; /* Green links */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <h1>Price Levels Calculator</h1>
-    
-    <div class="explanation">
-        <h3>How it works:</h3>
-        <p>Enter your entry price and risk percentage to calculate different price targets:</p>
-        <ul>
-            <li><strong>Lower Target (1:1):</strong> 2 levels with 50% steps</li>
-            <li><strong>Middle Target (1:2):</strong> 3 levels with 33% steps</li>
-            <li><strong>Upper Target (1:3):</strong> 5 levels with 20% steps</li>
-        </ul>
-        <p>Stop-loss moves up as price reaches each level.</p>
-    </div>
     
     <div class="input-container">
         <label for="entryPrice">Entry Price ($): </label>
